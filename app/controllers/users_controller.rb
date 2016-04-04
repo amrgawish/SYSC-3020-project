@@ -37,7 +37,11 @@ class UsersController < ApplicationController
     flash[:success] = "User deleted"
     redirect_to users_url
   end
-
+ 
+  def show
+    @user = User.find(params[:id])
+    @event = @user.events.paginate(page: params[:page])
+  end
 
   private
   def user_params

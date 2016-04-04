@@ -8,9 +8,9 @@ class EventsController < ApplicationController
 
   def create
     #needs fixing
-    @user = User.find(params[:user_id])
+    #@user = User.find(params[:id])
     @event = current_user.events.build(event_params)
-    @event.user = @user
+    #@event.user = @user
     if @event.save
       flash[:success] = "event was CREATED"
       redirect_to root_url
@@ -35,7 +35,7 @@ class EventsController < ApplicationController
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    redirect_to events_path
+    redirect_to root_url
   end
 
   def index 
