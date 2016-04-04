@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 gem "mime-types", '2.6.2'
 # Use sqlite3 as the database for A tive Record
+gem 'simplecov'
 gem 'pg'
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'bootstrap-will_paginate', '0.0.10'

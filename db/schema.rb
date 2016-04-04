@@ -22,15 +22,28 @@ ActiveRecord::Schema.define(version: 20160401212009) do
     t.string   "course"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
+  add_index "events", ["user_id", "created_at"], name: "index_events_on_user_id_and_created_at", using: :btree
+  add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "admin",           default: false
+    t.string   "password_digest"
+    t.string   "remember_digest"
+    t.boolean  "activated",       default: true
+    t.string   "course"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
+  add_index "users", ["email", "created_at"], name: "index_users_on_email_and_created_at", using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", using: :btree
+
+  add_foreign_key "events", "users"
 end

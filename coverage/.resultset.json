@@ -1,0 +1,110 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/vagrant/calendar/test/controllers/events_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/vagrant/calendar/app/models/event.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/vagrant/calendar/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/vagrant/calendar/app/controllers/events_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/vagrant/calendar/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/vagrant/calendar/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/vagrant/calendar/app/helpers/events_helper.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1459718426
+  }
+}
